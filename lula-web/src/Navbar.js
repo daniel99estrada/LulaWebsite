@@ -1,32 +1,21 @@
 import React from 'react';
+import logo from './Assets/logo.png'; // Import logo image
 
 function Navbar() {
   return (
     <nav className="bg-gray-800 p-4">
       <div className="flex items-center justify-between">
         <div className="flex items-center">
+          {/* Logo */}
+          <img src={logo} alt="Logo" className="h-16 mr-4" />
           {/* Company Name */}
           <div className="text-white font-semibold text-lg">Lula</div>
         </div>
-        {/* Hamburger Menu */}
-        <div className="flex md:hidden">
-          <button
-            type="button"
-            className="text-gray-300 hover:text-white focus:outline-none focus:text-white"
-            aria-label="Toggle menu"
-          >
-            <svg
-              className="h-6 w-6 fill-current"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fillRule="evenodd"
-                d="M4 6h16a1 1 0 010 2H4a1 1 0 010-2zm0 5h16a1 1 0 010 2H4a1 1 0 010-2zm0 5h16a1 1 0 010 2H4a1 1 0 010-2z"
-                clipRule="evenodd"
-              />
-            </svg>
-          </button>
+        {/* Nav Links */}
+        <div className="hidden md:flex">
+          <a href="#contact" className="text-white hover:text-gray-300 px-3 py-2">Contact</a>
+          <a href="#services" className="text-white hover:text-gray-300 px-3 py-2">Services</a>
+          <a href="#about" className="text-white hover:text-gray-300 px-3 py-2">About</a>
         </div>
       </div>
     </nav>
