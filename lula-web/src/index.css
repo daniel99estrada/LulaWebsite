@@ -1,3 +1,16 @@
+/* src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Bukhari+Script&family=Archivo+Black&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  .font-Bukhari {
+    font-family: 'Bukhari Script', cursive;
+  }
+
+  .font-ArchivoBlack {
+    font-family: 'Archivo Black', sans-serif;
+  }
+}
